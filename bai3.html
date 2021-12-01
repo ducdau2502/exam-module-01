@@ -18,7 +18,11 @@
                 }
             }
         }
-        return count;
+        if (count === 0) {
+            return false;
+        } else {
+            return count;
+        }
     }
 
     document.write("Chuỗi có: " + kiemTraNguyenAm(string) + " ký tự nguyên âm");
